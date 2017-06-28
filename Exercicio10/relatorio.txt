@@ -1,0 +1,228 @@
+
+-opt-poly=vectorize -DLARGE 
+
+<rtl><profile> _cl_offloading_read_only = 10119008 ns
+<rtl><profile> _cl_offloading_read_only = 3968 ns
+<rtl><profile> _cl_offloading_read_only = 3680 ns
+<rtl><profile> _cl_offloading_read_write = 3840 ns
+<rtl><profile> _cl_offloading_read_write = 3680 ns
+<rtl><profile> _cl_execute_kernel = 6330976 ns
+<rtl><profile> _cl_execute_kernel = 2002752 ns
+<rtl><profile> _cl_read_buffer = 4672 ns
+<rtl><profile> _cl_read_buffer = 4288 ns
+11458845696.0000  11463036928.0000
+0.4702
+
+-opt-poly=vectorize -DEXTRALARGE 
+<rtl><profile> _cl_offloading_read_only = 36970752 ns
+<rtl><profile> _cl_offloading_read_only = 6720 ns
+<rtl><profile> _cl_offloading_read_only = 6432 ns
+<rtl><profile> _cl_offloading_read_write = 6432 ns
+<rtl><profile> _cl_offloading_read_write = 6432 ns
+<rtl><profile> _cl_execute_kernel = 20622176 ns
+<rtl><profile> _cl_execute_kernel = 4556128 ns
+<rtl><profile> _cl_read_buffer = 6176 ns
+<rtl><profile> _cl_read_buffer = 5792 ns
+91648991232.0000  91664662528.0000
+0.3729
+
+-opt-poly=vectorize -DMEDIUM
+<rtl><profile> _cl_offloading_read_only = 2815776 ns
+<rtl><profile> _cl_offloading_read_only = 2592 ns
+<rtl><profile> _cl_offloading_read_only = 2304 ns
+<rtl><profile> _cl_offloading_read_write = 2304 ns
+<rtl><profile> _cl_offloading_read_write = 2336 ns
+<rtl><profile> _cl_execute_kernel = 2014528 ns
+<rtl><profile> _cl_execute_kernel = 979200 ns
+<rtl><profile> _cl_read_buffer = 3904 ns
+<rtl><profile> _cl_read_buffer = 3488 ns
+1433052672.0000  1434100096.0000
+0.4306
+
+-opt-poly=none -DLARGE
+<rtl><profile> _cl_offloading_read_only = 10082080 ns
+<rtl><profile> _cl_offloading_read_only = 4096 ns
+<rtl><profile> _cl_offloading_read_only = 3584 ns
+<rtl><profile> _cl_offloading_read_write = 3616 ns
+<rtl><profile> _cl_offloading_read_write = 3584 ns
+<rtl><profile> _cl_execute_kernel = 6427776 ns
+<rtl><profile> _cl_execute_kernel = 2011744 ns
+<rtl><profile> _cl_read_buffer = 4544 ns
+<rtl><profile> _cl_read_buffer = 4096 ns
+11458845696.0000  11463036928.0000
+0.3982
+
+-opt-poly=none -DEXTRALARGE
+<rtl><profile> _cl_offloading_read_only = 39376704 ns
+<rtl><profile> _cl_offloading_read_only = 16480 ns
+<rtl><profile> _cl_offloading_read_only = 6432 ns
+<rtl><profile> _cl_offloading_read_write = 6400 ns
+<rtl><profile> _cl_offloading_read_write = 6400 ns
+<rtl><profile> _cl_execute_kernel = 20523296 ns
+<rtl><profile> _cl_execute_kernel = 4556000 ns
+<rtl><profile> _cl_read_buffer = 6656 ns
+<rtl><profile> _cl_read_buffer = 6176 ns
+91648991232.0000  91664662528.0000
+0.4129
+
+-opt-poly=none -DMEDIUM 
+<rtl><profile> _cl_offloading_read_only = 2710272 ns
+<rtl><profile> _cl_offloading_read_only = 2624 ns
+<rtl><profile> _cl_offloading_read_only = 2336 ns
+<rtl><profile> _cl_offloading_read_write = 2336 ns
+<rtl><profile> _cl_offloading_read_write = 2272 ns
+<rtl><profile> _cl_execute_kernel = 2035776 ns
+<rtl><profile> _cl_execute_kernel = 981632 ns
+<rtl><profile> _cl_read_buffer = 3936 ns
+<rtl><profile> _cl_read_buffer = 3456 ns
+1433052672.0000  1434100096.0000
+0.3096
+
+-opt-poly=tile -DLARGE 
+<rtl><profile> _cl_offloading_read_only = 10253472 ns
+<rtl><profile> _cl_offloading_read_only = 3904 ns
+<rtl><profile> _cl_offloading_read_only = 3616 ns
+<rtl><profile> _cl_offloading_read_write = 3648 ns
+<rtl><profile> _cl_offloading_read_write = 3776 ns
+<rtl><profile> _cl_execute_kernel = 6333216 ns
+<rtl><profile> _cl_execute_kernel = 2005472 ns
+<rtl><profile> _cl_read_buffer = 4544 ns
+<rtl><profile> _cl_read_buffer = 4128 ns
+11458845696.0000  11463036928.0000
+0.3312
+
+-opt-poly=tile -DEXTRALARGE
+<rtl><profile> _cl_offloading_read_only = 36511616 ns
+<rtl><profile> _cl_offloading_read_only = 6752 ns
+<rtl><profile> _cl_offloading_read_only = 6400 ns
+<rtl><profile> _cl_offloading_read_write = 6592 ns
+<rtl><profile> _cl_offloading_read_write = 6400 ns
+<rtl><profile> _cl_execute_kernel = 20521152 ns
+<rtl><profile> _cl_execute_kernel = 4563008 ns
+<rtl><profile> _cl_read_buffer = 6240 ns
+<rtl><profile> _cl_read_buffer = 5824 ns
+91648991232.0000  91664662528.0000
+0.3761
+
+-opt-poly=tile -DMEDIUM 
+<rtl><profile> _cl_offloading_read_only = 2833888 ns
+<rtl><profile> _cl_offloading_read_only = 2592 ns
+<rtl><profile> _cl_offloading_read_only = 2304 ns
+<rtl><profile> _cl_offloading_read_write = 2304 ns
+<rtl><profile> _cl_offloading_read_write = 2304 ns
+<rtl><profile> _cl_execute_kernel = 2019584 ns
+<rtl><profile> _cl_execute_kernel = 976768 ns
+<rtl><profile> _cl_read_buffer = 3904 ns
+<rtl><profile> _cl_read_buffer = 3424 ns
+1433052672.0000  1434100096.0000
+0.3308
+
+
+Serial
++---------------------------------------------+
+         |-DMEDIUM |  -DLARGE  | -DEXTRALARGE |
++---------------------------------------------+
+none     | 0.0315  |   0.2085  |   0.8523     |     
+tile     | 0.0297  |   0.1994  |   0.8711     |    
+vectorize| 0.0308  |   0.2008  |   0.8611     |
+-----------------------------------------------
+
+-DLARGE e tile
+11458845696.0000  11463036928.0000
+0.1944
+
+-MEDIUM e tile
+1433052672.0000  1434100096.0000
+0.0297
+
+-DEXTRALARGE e tile
+91648991232.0000  91664662528.0000
+0.8523
+
+-DLARGE e none
+11458845696.0000  11463036928.0000
+0.2085
+
+-DMEDIUM e none
+1433052672.0000  1434100096.0000
+0.0315
+
+-DEXTRALARGE e none
+91648991232.0000  91664662528.0000
+0.8711
+
+-DLARGE e vectorize
+11458845696.0000  11463036928.0000
+0.2008
+
+-DMEDIUM e vectorize
+1433052672.0000  1434100096.0000
+0.0308
+
+-DEXTRALARGE e vectorize
+91648991232.0000  91664662528.0000
+0.8611
+
+
+Paralelo
++---------------------------------------------+
+         |-DMEDIUM |  -DLARGE  | -DEXTRALARGE |
++---------------------------------------------+
+none     |  0.0381 |  0.0801   | 0.2083       |  
+tile     |  0.0610 |  0.0653   | 0.2089       |
+vectorize|  0.0382 |  0.0777   | 0.2122       |
+-----------------------------------------------
+
+-DLARGE e tile
+11458845696.0000  11463036928.0000
+0.0653
+
+-MEDIUM e tile
+1433052672.0000  1434100096.0000
+0.0610
+
+-DEXTRALARGE e tile
+91648991232.0000  91664662528.0000
+0.2089
+
+-DLARGE e none
+11458845696.0000  11463036928.0000
+0.0801
+
+-DMEDIUM e none
+1433052672.0000  1434100096.0000
+0.0381
+
+-DEXTRALARGE e none
+91648991232.0000  91664662528.0000
+0.2083
+
+
+-DLARGE e vectorize
+11458845696.0000  11463036928.0000
+0.0777
+
+
+-DMEDIUM e vectorize
+1433052672.0000  1434100096.0000
+0.0382
+
+
+-DEXTRALARGE e vectorize
+91648991232.0000  91664662528.0000
+0.2122
+
+
+Speedup (Serial/Paralelo)
++---------------------------------------------+
+         |-DMEDIUM |  -DLARGE  | -DEXTRALARGE |
++---------------------------------------------+
+none     |    0.82 |     2.60  |     4.09     |
+tile     |    0.77 |     3.05  |     4.16     |
+vectorize|    0.80 |     2.58  |     4.05     |
+ -----------------------------------------------
+
+
+
+
+
